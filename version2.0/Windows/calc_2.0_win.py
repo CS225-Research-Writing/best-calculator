@@ -129,9 +129,11 @@ class Application(Frame):
                     self.plusMinus.config(state="normal")
                     self.percent.config(state="normal")
             elif len(self.mainView.cget("text")) > 1:
+                if len(self.mainView.cget("text")) < 20:
                     self.mainView.config(text=self.mainView.cget("text") + "1")
         else:
-            self.mainView.config(text=self.mainView.cget("text") + "1")
+            if len(self.mainView.cget("text")) < 20:
+                self.mainView.config(text=self.mainView.cget("text") + "1")
 
     def printTwo(self):
         if "0" in self.mainView.cget("text"):
@@ -140,9 +142,11 @@ class Application(Frame):
                     self.plusMinus.config(state="normal")
                     self.percent.config(state="normal")
             elif len(self.mainView.cget("text")) > 1:
+                if len(self.mainView.cget("text")) < 20:
                     self.mainView.config(text=self.mainView.cget("text") + "2")
         else:
-            self.mainView.config(text=self.mainView.cget("text") + "2")
+            if len(self.mainView.cget("text")) < 20:
+                self.mainView.config(text=self.mainView.cget("text") + "2")
 
     def printThree(self):
         if "0" in self.mainView.cget("text"):
@@ -151,11 +155,11 @@ class Application(Frame):
                     self.plusMinus.config(state="normal")
                     self.percent.config(state="normal")
             elif len(self.mainView.cget("text")) > 1:
-                {
+                if len(self.mainView.cget("text")) < 20:
                     self.mainView.config(text=self.mainView.cget("text") + "3")
-                }
         else:
-            self.mainView.config(text=self.mainView.cget("text") + "3")
+            if len(self.mainView.cget("text")) < 20:
+                self.mainView.config(text=self.mainView.cget("text") + "3")
 
     def printFour(self):
         if "0" in self.mainView.cget("text"):
@@ -164,11 +168,11 @@ class Application(Frame):
                     self.plusMinus.config(state="normal")
                     self.percent.config(state="normal")
             elif len(self.mainView.cget("text")) > 1:
-                {
+                if len(self.mainView.cget("text")) < 20:
                     self.mainView.config(text=self.mainView.cget("text") + "4")
-                }
         else:
-            self.mainView.config(text=self.mainView.cget("text") + "4")
+            if len(self.mainView.cget("text")) < 20:
+                self.mainView.config(text=self.mainView.cget("text") + "4")
 
     def printFive(self):
         if "0" in self.mainView.cget("text"):
@@ -177,11 +181,11 @@ class Application(Frame):
                     self.plusMinus.config(state="normal")
                     self.percent.config(state="normal")
             elif len(self.mainView.cget("text")) > 1:
-                {
+                if len(self.mainView.cget("text")) < 20:
                     self.mainView.config(text=self.mainView.cget("text") + "5")
-                }
         else:
-            self.mainView.config(text=self.mainView.cget("text") + "5")
+            if len(self.mainView.cget("text")) < 20:
+                self.mainView.config(text=self.mainView.cget("text") + "5")
 
     def printSix(self):
         if "0" in self.mainView.cget("text"):
@@ -190,11 +194,11 @@ class Application(Frame):
                     self.plusMinus.config(state="normal")
                     self.percent.config(state="normal")
             elif len(self.mainView.cget("text")) > 1:
-                {
+                if len(self.mainView.cget("text")) < 20:
                     self.mainView.config(text=self.mainView.cget("text") + "6")
-                }
         else:
-            self.mainView.config(text=self.mainView.cget("text") + "6")
+            if len(self.mainView.cget("text")) < 20:
+                self.mainView.config(text=self.mainView.cget("text") + "6")
 
     def printSeven(self):
         if "0" in self.mainView.cget("text"):
@@ -203,11 +207,11 @@ class Application(Frame):
                     self.plusMinus.config(state="normal")
                     self.percent.config(state="normal")
             elif len(self.mainView.cget("text")) > 1:
-                {
+                if len(self.mainView.cget("text")) < 20:
                     self.mainView.config(text=self.mainView.cget("text") + "7")
-                }
         else:
-            self.mainView.config(text=self.mainView.cget("text") + "7")
+            if len(self.mainView.cget("text")) < 20:
+                self.mainView.config(text=self.mainView.cget("text") + "7")
 
     def printEight(self):
         if "0" in self.mainView.cget("text"):
@@ -216,11 +220,11 @@ class Application(Frame):
                     self.plusMinus.config(state="normal")
                     self.percent.config(state="normal")
             elif len(self.mainView.cget("text")) > 1:
-                {
+                if len(self.mainView.cget("text")) < 20:
                     self.mainView.config(text=self.mainView.cget("text") + "8")
-                }
         else:
-            self.mainView.config(text=self.mainView.cget("text") + "8")
+            if len(self.mainView.cget("text")) < 20:
+                self.mainView.config(text=self.mainView.cget("text") + "8")
 
     def printNine(self):
         if "0" in self.mainView.cget("text"):
@@ -229,25 +233,26 @@ class Application(Frame):
                     self.plusMinus.config(state="normal")
                     self.percent.config(state="normal")
             elif len(self.mainView.cget("text")) > 1:
-                {
+                if len(self.mainView.cget("text")) < 20:
                     self.mainView.config(text=self.mainView.cget("text") + "9")
-                }
         else:
-            self.mainView.config(text=self.mainView.cget("text") + "9")
+            if len(self.mainView.cget("text")) < 20:
+                self.mainView.config(text=self.mainView.cget("text") + "9")
 
     def printZero(self):
         if "0" in self.mainView.cget("text"):
             if len(self.mainView.cget("text")) == 1:
                     self.mainView.config(text="0")
             elif len(self.mainView.cget("text")) > 1:
-                {
+                if len(self.mainView.cget("text")) < 20:
                     self.mainView.config(text=self.mainView.cget("text") + "0")
-                }
         else:
-            self.mainView.config(text=self.mainView.cget("text") + "0")
+            if len(self.mainView.cget("text")) < 20:
+                self.mainView.config(text=self.mainView.cget("text") + "0")
 
     def printDot(self):
-        self.mainView.config(text=self.mainView.cget("text") + ".")
+        if len(self.mainView.cget("text")) < 20:
+            self.mainView.config(text=self.mainView.cget("text") + ".")
 
     def createWidgets(self):
         global calcView, opView
@@ -392,8 +397,9 @@ class Application(Frame):
 
         self.columnconfigure(1, weight=4)
 
-        self.mainView = Label(self, text="0", anchor="e", height=4, bg="black", fg="white")
-        self.mainView.grid(row=1,column=4,columnspan=4)
+        self.mainView = Label(self, text="0", anchor="e", height=3, bg="black", fg="white", justify="left")
+        self.mainView.config(font=("Monserrat", 12))
+        self.mainView.grid(row=1,column=1,columnspan=4)
 
         self.allClear.grid(row=3,column=1)
         self.plusMinus.grid(row=3,column=2)
@@ -421,8 +427,8 @@ class Application(Frame):
 
     def __init__(self, master=None):
         Frame.__init__(self, master)
-        master.minsize(width=208,height=238)
-        master.maxsize(width=208,height=238)
+        master.minsize(width=209,height=239)
+        master.maxsize(width=209,height=239)
         master.bg="black"
         self.grid()
         self.createWidgets()
