@@ -428,7 +428,7 @@ class Application(Frame):
     def __init__(self, master=None):
         Frame.__init__(self, master)
         master.minsize(width=209,height=239)
-        master.maxsize(width=209,height=239)
+        #master.maxsize(width=209,height=239)
         master.bg="black"
         self.grid()
         self.createWidgets()
