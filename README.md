@@ -12,4 +12,4 @@ Version 2.0 is version 1.0 but is heavily focused on the GUI. Version 2.0 works 
 
 This project was influenced by the calculator developed by Apple's proprietary software.
 
-(c) Roshan Saganti. All Rights Reserved.
+(c) Roshan Saganti.
